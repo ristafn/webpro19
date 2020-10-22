@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="" method="POST">
+        <table style="width: 100%;">
+            <tr><th></th></tr>
+            <tr><th></th></tr>
+            <tr><th></th></tr>
+            <tr>
+                <th style="width: 50%;"></th>
+                <td>
+                    <div style="width: 100%; background-color: white;">
+                        <label for="date">DATE</label>
+                        <input style="width: 83%" type="date" name="date_form" value="2020-12-12">
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <h3>PERSONAL INFORMATION</h3>
+        <hr width="100%">
+        <table>
+            <tr>
+                <td>
+                    <label for="name">NAME</label>
+                    <input type="text" name="name" placeholder="Example : Jhomn Kennedy">
+                </td>    
+            </tr>
+            <tr>
+                <td>
+                    <label for="date_birth">DATE OF BIRTH</label>
+                    <input type="date" name="date_birth" value="2020-12-12">
+                </td>
+            </tr>
+        </table>
+
+        </br>
+        </br>
+
+        <h3>CONTACT INFORMATION</h3>
+        <hr width="100%">
+        <table style="width: 100%;">
+            <tr style="width: 30%">
+                <td colspan="2">
+                    <label for="address">ADDRESS</label>
+                    <textarea name="address" id="" cols="30" rows="1"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="city">CITY</label>
+                    <input type="text" name="city" >
+                </td>
+                <td>
+                    <label for="province">PROVINCE/STATE</label>
+                    <input type="text" name="province">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="code">ZIP CODE</label>
+                    <input type="text" name="code">
+                </td>
+                <td>
+                    <label for="country">COUNTRY</label>
+                    <input type="text" name="country">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="phone">PHONE</label>
+                    <input type="number" name="phone">
+                </td>
+                <td>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="membership">MEMBERSHIP TYPE</label>
+                    <input type="radio" name="membership"> Reguler 
+                    <input type="radio" name="membership"> Premium
+                    <input type="radio" name="membership"> VIP
+                </td>
+            </tr>
+        </table>
+        </br>
+        </br>
+
+        <h3>CONTACT INFORMATION</h3>
+        <hr width="100%">
+        <table>
+            <tr>
+                <td>
+                    <label for="course">COURSE NAME</label>
+                    <input type="text" name="course">
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <label for="payment">PAYMENT DETAILS</label>
+                    <input type="radio" name="payment"> Cash 
+                    <input type="radio" name="payment"> Cheque
+                    <input type="radio" name="payment"> Credit Card
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="comments">COMMENTS</label>
+                    <textarea name="comments" id="" cols="30" rows="2"></textarea>
+                </td>
+            </tr>
+        </table>
+        <table border="1" style="width: 100%;">
+            <tr style="height: 60px;">
+                <td style="width: 50%;">STUDENTS SIGNATURE</td>
+                <td>VALIDATED BY</td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
