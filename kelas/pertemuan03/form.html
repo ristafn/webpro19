@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1 style="color: teal;">Student Registration Form</h1>
+    <form action="" method="POST">
+        <table border="0" style="width: 100%;">
+            <tr><th></th></tr>
+            <tr>
+                <th style="width: 50%;"></th>
+                <td>
+                    <div style="width: 100%; background-color: white;">
+                        <label style="margin-right: 50px;" for="date">DATE</label>
+                        <input style="background-color: rgb(241, 241, 241); width: 84.4%; border: transparent; height: 40px;" style="width: 83%" type="date" name="date_form" value="2020-12-12" required>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <hr width="51%" style="margin-right: 1px; margin-top: -2px; margin-bottom: -2px;">
+        <h3>PERSONAL INFORMATION</h3>
+        <hr style="border: 2px solid black;">
+        <table border="0" style="width: 100%; margin-top: -10px;">
+            <tr>
+                <td>
+                    <label style="margin-right: 100px;" for="name">NAME</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 87.5%; border: transparent; height: 40px;" type="text" name="name" placeholder="Example : Jhomn Kennedy" required>
+                </td>    
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table style="width: 100%;">
+            <tr>
+                <td>
+                    <label style="margin-right: 27px;" for="date_birth">DATE OF BIRTH</label>&nbsp;
+                    <input style="background-color: rgb(241, 241, 241); width: 87.7%; border: transparent; height: 40px;" type="date" name="date_birth" value="2020-12-12" required>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px;">
+
+        </br>
+        </br>
+
+        <h3>CONTACT INFORMATION</h3>
+        <hr style="border: 2px solid black;">
+        <table border="0" style="width: 100%; margin-top: -10px;">
+            <tr style="width: 30%">
+                <td colspan="2">
+                    <label style="margin-right: 75px;" for="address">ADDRESS</label>
+                    <textarea style="background-color: rgb(241, 241, 241); width: 87.3%; border: transparent; height: 40px;" name="address" id="" cols="30" rows="1" placeholder="Example : Kuvukiland, No.267, Kuvukiland, Kiland" required></textarea>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -5px; margin-bottom: -2px;">
+        <table border="0" style="width: 100%;">
+            <tr>
+                <td>
+                    <label style="margin-right: 110px;" for="city">CITY</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 75.1%; border: transparent; height: 40px;" type="text" name="city" placeholder="Example : Kuvukiland" required>
+                </td>
+                <td>
+                    <label for="province">PROVINCE/STATE</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 76.7%; border: transparent; height: 40px;" type="text" name="province" placeholder="Example : Kuvukiland" required>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table border="0" style="width: 100%;">
+            <tr>
+                <td style="width: 51.1%;">
+                    <label style="margin-right: 77px;" for="code">ZIP CODE</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 75.3%; border: transparent; height: 40px;" type="text" name="code" pattern="^(?=.{4,}).*$" title="ZIP CODE minimal 4" maxlength="4" placeholder="Example : SX23" required>
+                </td>
+                <td>
+                    <label style="margin-right: 56px;" for="country">COUNTRY</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 76.5%; border: transparent; height: 40px;" type="text" name="country" placeholder="Example : Kiland" required>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table border="0" style="width: 100%;">
+            <tr>
+                <td style="width: 51.1%;">
+                    <label style="margin-right: 94px;" for="phone">PHONE</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 75.4%; border: transparent; height: 40px;" type="number" name="phone" placeholder="Example : 0808987802321" required>
+                </td>
+                <td>
+                    <label style="margin-right: 81px;" for="email">EMAIL</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 76.6%; border: transparent; height: 40px;" type="email" name="email" placeholder="Example : kuvukiland@gmail.com" required>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table border="0" style="width: 100%;">
+            <tr>
+                <td colspan="2" style="height: 40px;">
+                    <label style="margin-right: -1px;" for="membership">MEMBERSHIP TYPE</label>
+                    <input type="radio" name="membership"> Reguler 
+                    <input type="radio" name="membership"> Premium
+                    <input type="radio" name="membership"> VIP
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+
+        </br>
+        </br>
+
+        <h3>CONTACT INFORMATION</h3>
+        <hr style="border: 2px solid black;">
+        <table border="0" style="width: 100%; margin-top: -10px;">
+            <tr>
+                <td>
+                    <label style="margin-right: 35px;" for="course">COURSE NAME</label>
+                    <input style="background-color: rgb(241, 241, 241); width: 87.3%; border: transparent; height: 40px;" type="text" name="course" placeholder="Example : Metal Head" required>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table border="0" style="width: 100%;">
+            <tr>
+                <td colspan="2" style="height: 40px;">
+                    <label style="margin-right: 2px;" for="payment">PAYMENT DETAILS</label>
+                    <input type="radio" name="payment"> Cash 
+                    <input type="radio" name="payment"> Cheque
+                    <input type="radio" name="payment"> Credit Card
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table border="0" style="width: 100%;"> 
+            <tr>
+                <td>
+                    <label style="margin-right: 58px;" for="comments">COMMENTS</label>
+                    <textarea style="background-color: rgb(241, 241, 241);" name="comments" id="" cols="166" rows="5"></textarea>
+                </td>
+            </tr>
+        </table>
+        <hr style="margin-top: -2px; margin-bottom: -2px;">
+        <table border="1" style="width: 100%;">
+            <tr style="height: 60px;">
+                <th style="width: 50%;">STUDENTS SIGNATURE</th>
+                <th>VALIDATED BY</th>
+            </tr>
+        </table>
+        <hr style="margin-top: 10px; margin-bottom: 10px;">
+        <center><button type="submit">Daftar</button></center>
+    </form>
+</body>
+</html>
