@@ -1,0 +1,11 @@
+th{
+    background-color: coral;
+}
+
+p{
+    color: blue;
+}
+
+#kampus p {
+    color: red;
+}
