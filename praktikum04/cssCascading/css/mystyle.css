@@ -1,0 +1,37 @@
+/* background */
+.bg {
+    background-color: yellow;
+    background-image: url("../img/Lets_go_travel_Banner.jpg");
+}
+
+/* text dan font */
+a {
+    text-align: center;
+    text-decoration: none;
+    line-height: 200%;
+    font-size: 100px;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+
+/* box model */
+#par {
+    background-color: lightgrey;
+    width: 300px;
+    border: 15px solid green;
+    padding: 50px;
+    margin: 20px;
+}
+/* position dan display */
+.post {
+    position: relative;
+    float: right;
+    display: inline;
+    color: red;
+}
+/* navigation dan list */
+nav ul{
+    list-style: unset;
+    background-color: grey;
+}
