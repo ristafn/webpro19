@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 /* background */
 .bg {
     background-color: yellow;
@@ -12,6 +16,7 @@ a {
     font-size: 100px;
     font-weight: bold;
     font-style: italic;
+    font-size: 40px;
     
 }
 
@@ -19,7 +24,7 @@ a {
 #par {
     background-color: lightgrey;
     width: 300px;
-    border: 15px solid green;
+    border: 10px solid lightgreen;
     padding: 50px;
     margin: 20px;
 }
@@ -34,4 +39,19 @@ a {
 nav ul{
     list-style: unset;
     background-color: grey;
+}
+
+nav ul li {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li a{
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    font-size: 15px;
+    margin-left: 900px;
+    margin-right: 10px;
 }
