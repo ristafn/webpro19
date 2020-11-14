@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Kurs Rupiah</title>
+    
+</head>
+
+<body>
+    <fieldset style="background-color: rgb(220, 252, 241);">
+        <legend>Kurs Rupiah - Mata Uang Asing</legend>
+        <form>
+            <table style="width: 100%; border: solid;">
+                <tr>
+                    <th>Masukkan Nilai</th>
+                    <th>Valas</th>
+                    <th>Nilai Rupiah</th>
+                </tr>
+                <tr>
+                    <td>
+                        <input id="uangLuar" style="width: 98%;" value="0" type="number" onchange="convertKurs()">
+                    </td>
+                    <td>
+                        <select id="listUangLuar" style="width: 100%;" onchange="convertKurs()">
+                            <option value="9915">Dollar US</option>
+                            <option value="13472">Dollar Singapore</option>
+                            <option value="874">Ringgit Malaysia</option>
+                            <option value="120">Yen Jepang</option>
+                            <option value="15888">Euro</option>
+                            <option value="3592">Riyal Arab Saudi</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input id="convert" style="width: 98%;" value="0" type="number">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </fieldset>
+
+    <!-- Javascript -->
+    <script src="js/calc.js"></script>
+</body>
+</html>

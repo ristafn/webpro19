@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .kuning{
+            background-color: yellow;
+        }
+    </style>
+    <script>
+        function mulai(){
+            let div_nf = document.getElementById('nf')
+            div_nf.innerHTML = "<h1>STT Nurul Fikri</h1>"
+            // div_nf.style.backgroundColor="yellow"
+            div_nf.className="kuning"
+        }
+
+        // function makeBlue(){
+        //     div_nf.style.color = "white"
+        //     div_nf.style.backgroundColor= "blue"
+        // }
+
+        // function makeBlue(){
+        //     div_nf.style.color = "black"
+        //     div_nf.style.backgroundColor= "yellow"
+        // }
+
+        function pilih(){
+            let list_buah = document.getElementById('buah')
+            console.log('anda pilih ' + list_buah[list_buah.selectedIndex].value)
+        }
+    </script>
+</head>
+<body onload="mulai()">
+    <!-- <div id="nf" onmouseout="makeYellow()" onmouseover="makeBlue()"></div> -->
+
+    <form action="">
+        Jus buah : <select name="buah" id="buah" onclick="pilih()">
+            <option value="jeruk">jeruk</option>
+            <option value="mangga">mangga</option>
+            <option value="sirsak">sirsak</option>
+            <option value="alpukat">alpukat</option>
+        </select>
+    </form>
+</body>
+</html>
