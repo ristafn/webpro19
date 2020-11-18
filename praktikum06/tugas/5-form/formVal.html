@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html id="show" lang="en">
+
+<head id="show">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .benar {
+            color: green;
+        }
+
+        .benar:before {
+            position: relative;
+            content: "✔";
+        }
+
+        .salah {
+            color: red;
+        }
+
+        .salah:before {
+            position: relative;
+            content: "✖";
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Form Validation</h1>
+    <hr>
+    <form>
+        <h3>Tujuan Keberangkatan : </h3>
+        <ol>
+            <li>Jakarta</li>
+            <li>Surabaya</li>
+            <li>Semarang</li>
+        </ol>
+        <fieldset>
+            <legend><h4>Data Penumpang</h4></legend>
+            <table>
+                <!-- nama -->
+                <tr>
+                    <td><label for="nama">Nama Pelanggan</label></td>
+                    <td><input type="text" name="nama" id="nama" pattern=".{,30}"
+                            title="Max 30 character dan harus di isi" onkeyup="getNama()" required>
+                        <span id="errorNama" class="salah">Maksimal 30 huruf</span><br></td>
+                </tr>
+                <!-- Email -->
+                <tr>
+                    <td><label for="email">Email</label></td>
+                    <td><input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            title="example : jhomn12@gmail.com" size="30" onkeyup="getEmail()" required>
+                        <span id="errorEmail" class="salah">Sesuaikan dengan format email!</span><br>
+                        <p style="font-size: 8px; color: grey;">*contoh : jhomn12@gmail.com</p>
+                    </td>
+                </tr>
+                <!-- Jam -->
+                <tr>
+                    <td><label for="jam">Jam Keberangkatan</label></td>
+                    <td><input type="text" name="jam" id="jam" onkeyup="getJam()" required>
+                        <span id="errorJam" class="salah">Masukkan jam antara 00:00 - 23:59</span><br>
+                    </td>
+                </tr>
+                <!-- tujuan -->
+                <tr>
+                    <td><label for="tujuan">Tujuan Keberangkatan</label></td>
+                    <td><input type="text" name="tujuan" id="tujuan" onkeyup="getTujuan()" required>
+                        <span id="errorTujuan" class="salah">Masukkan sesuai list tujuan!</span></td>
+                </tr>
+    
+                <!-- Jumlah -->
+                <tr>
+                    <td><label for="jumlah">Jumlah Tiket</label></td>
+                    <td><input type="text" name="jumlah" id="jumlah" onkeyup="getJumlah()" required>
+                        <span id="errorJumlah" class="salah">Masukkan jumlah tiket 1 - 10</span></td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <br>
+
+        <input type="submit" name="submit" id="submit" onclick="getForm()" value="Submit">
+        <input type="reset" name="clear" id="" value="Cancel">
+        <br>
+
+    </form>
+    <script id="show" src="../../js/formVal.js"></script>
+</body>
+
+</html>
