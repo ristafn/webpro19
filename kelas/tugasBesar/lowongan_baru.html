@@ -14,6 +14,31 @@
 
     <!-- searchbar -->
     <link rel="stylesheet" type="text/css" href="css/searchbar.css">
+    <style>
+        #mobile-1{
+            display: block;
+        }
+
+        #mobile-2{
+            display: block;
+        }
+
+        #mobile-3{
+            display: block;
+        }
+
+        #mobile-4{
+            display: block;
+        }
+
+        #backend-1{
+            display: block;
+        }
+
+        #backend-2{
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -91,12 +116,12 @@
                         <form action="_POST">
                             <div class="form-group d-flex justify-content-start m-5 mt-0 mb-4">
                                 <label class="me-3 pt-1" for="Kategori">Kategori</label>
-                                <select class="form-control w-50" id="Kategori">
-                                  <option>All</option>
-                                  <option>Mobile Developer</option>
-                                  <option>Website Developer</option>
-                                  <option>Cloud Computing</option>
-                                  <option>Backend</option>
+                                <select class="form-control w-50" id="kategori" onchange="main()">
+                                  <option value="all">All</option>
+                                  <option value="mobile">Mobile Developer</option>
+                                  <option value="website">Website Developer</option>
+                                  <option value="cloud">Cloud Computing</option>
+                                  <option value="backend">Backend</option>
                                 </select>
                             </div>
                         </form>
@@ -107,7 +132,7 @@
             <!-- card job list -->
             <section>
                 <div class="row m-5 mt-1 mb-2">
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="mobile-1" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-1.jpg" alt="Card image cap">
@@ -125,7 +150,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="mobile-2" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-2.gif" alt="Card image cap">
@@ -143,7 +168,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="backend-1" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/backend-1.png" alt="Card image cap">
@@ -161,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="mobile-3" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-1.jpg" alt="Card image cap">
@@ -179,7 +204,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="mobile-4" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
@@ -197,7 +222,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="backend-2" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/backend-1.png" alt="Card image cap">
@@ -216,7 +241,6 @@
                         </div>
                     </div>
                 </div>
-                <h5><a class="d-flex justify-content-center text-dark" href="berita.html">Lainnya</a></h5>
             </section>
         </div>
         <div class="col-lg-1 col-md-1 col-sm-12"></div>
@@ -248,6 +272,8 @@
 
     <!-- searchbar -->
     <script src="js/searchbar.js"></script>
+
+    <script src="js/joblist.js"></script>
 </body>
 
 </html>
