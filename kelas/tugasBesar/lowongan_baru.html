@@ -15,27 +15,51 @@
     <!-- searchbar -->
     <link rel="stylesheet" type="text/css" href="css/searchbar.css">
     <style>
-        #mobile-1{
+        #programmer-1 {
             display: block;
         }
 
-        #mobile-2{
+        #programmer-2 {
             display: block;
         }
 
-        #mobile-3{
+        #programmer-3 {
             display: block;
         }
 
-        #mobile-4{
+        #programmer-4 {
             display: block;
         }
 
-        #backend-1{
+        #programmer-5 {
             display: block;
         }
 
-        #backend-2{
+        #programmer-6 {
+            display: block;
+        }
+
+        #network-1 {
+            display: block;
+        }
+
+        #network-2 {
+            display: block;
+        }
+
+        #analyst-1 {
+            display: block;
+        }
+
+        #analyst-2 {
+            display: block;
+        }
+
+        #dataScience-1 {
+            display: block;
+        }
+
+        #dataScience-2 {
             display: block;
         }
     </style>
@@ -57,11 +81,11 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                 <li class="nav-item">
-                                    <a class="nav-link" aria-current="page"
-                                        href="index.html">Home</a>
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link border-bottom border-primary border-2 active" href="lowongan_baru.html">Lowongan Baru</a>
+                                    <a class="nav-link border-bottom border-primary border-2 active"
+                                        href="lowongan_baru.html">Lowongan Baru</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="isi_loker.html" tabindex="-1" aria-disabled="true">Isi
@@ -106,8 +130,10 @@
                         <div class="d-flex justify-content-end m-5">
                             <nav aria-label="Page breadcrumb">
                                 <ol class="breadcrumb">
-                                    <li class="breadcrumb-item" aria-current="page"><a class="text-dark" href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active"><a class="text-muted" href="#">Lowongan Baru</a></li>
+                                    <li class="breadcrumb-item" aria-current="page"><a class="text-dark"
+                                            href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active"><a class="text-muted" href="#">Lowongan Baru</a>
+                                    </li>
                                 </ol>
                             </nav>
                         </div>
@@ -117,11 +143,11 @@
                             <div class="form-group d-flex justify-content-start m-5 mt-0 mb-4">
                                 <label class="me-3 pt-1" for="Kategori">Kategori</label>
                                 <select class="form-control w-50" id="kategori" onchange="main()">
-                                  <option value="all">All</option>
-                                  <option value="mobile">Mobile Developer</option>
-                                  <option value="website">Website Developer</option>
-                                  <option value="cloud">Cloud Computing</option>
-                                  <option value="backend">Backend</option>
+                                    <option value="all">All</option>
+                                    <option value="programmer">Programer</option>
+                                    <option value="network">Network & Infrastructure</option>
+                                    <option value="analyst">Analyst</option>
+                                    <option value="dataScience">Data Science</option>
                                 </select>
                             </div>
                         </form>
@@ -132,7 +158,7 @@
             <!-- card job list -->
             <section>
                 <div class="row m-5 mt-1 mb-2">
-                    <div id="mobile-1" class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="programmer-1" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-1.jpg" alt="Card image cap">
@@ -150,7 +176,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="mobile-2" class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="programmer-2" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-2.gif" alt="Card image cap">
@@ -168,7 +194,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="backend-1" class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="programmer-3" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/backend-1.png" alt="Card image cap">
@@ -186,7 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="mobile-3" class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="programmer-4" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-1.jpg" alt="Card image cap">
@@ -204,7 +230,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="mobile-4" class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="programmer-5" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
@@ -222,12 +248,120 @@
                             </div>
                         </div>
                     </div>
-                    <div id="backend-2" class="col-lg-4 col-md-6 col-sm-12">
+                    <div id="programmer-6" class="col-lg-4 col-md-6 col-sm-12">
                         <div class="d-flex justify-content-center">
                             <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
                                 <img class="card-img-top" src="img/jobs/backend-1.png" alt="Card image cap">
                                 <div class="card-body">
-                                    <h5 class="card-title">Classic Dev Community</h5>
+                                    <h5 class="card-title">Classic Community</h5>
+                                    <p class="card-text">Dibutuhkan Programer IOS</p>
+                                    <p class="card-text">Kualifikasi : </p>
+                                    <ul class="card-text">
+                                        <li>S1 Teknik Informatika</li>
+                                        <li>Menguasai pemrograman Swift</li>
+                                        <li>Mysql, PostgreSQL</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="network-1" class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
+                                <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">PT. Serta Mejoyokarta</h5>
+                                    <p class="card-text">Dibutuhkan Programer IOS</p>
+                                    <p class="card-text">Kualifikasi : </p>
+                                    <ul class="card-text">
+                                        <li>S1 Teknik Informatika</li>
+                                        <li>Menguasai pemrograman Swift</li>
+                                        <li>Mysql, PostgreSQL</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="network-2" class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
+                                <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">PT. Serta Mejoyokarta</h5>
+                                    <p class="card-text">Dibutuhkan Programer IOS</p>
+                                    <p class="card-text">Kualifikasi : </p>
+                                    <ul class="card-text">
+                                        <li>S1 Teknik Informatika</li>
+                                        <li>Menguasai pemrograman Swift</li>
+                                        <li>Mysql, PostgreSQL</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="analyst-1" class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
+                                <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">PT. Serta Mejoyokarta</h5>
+                                    <p class="card-text">Dibutuhkan Programer IOS</p>
+                                    <p class="card-text">Kualifikasi : </p>
+                                    <ul class="card-text">
+                                        <li>S1 Teknik Informatika</li>
+                                        <li>Menguasai pemrograman Swift</li>
+                                        <li>Mysql, PostgreSQL</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="analyst-2" class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
+                                <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">PT. Serta Mejoyokarta</h5>
+                                    <p class="card-text">Dibutuhkan Programer IOS</p>
+                                    <p class="card-text">Kualifikasi : </p>
+                                    <ul class="card-text">
+                                        <li>S1 Teknik Informatika</li>
+                                        <li>Menguasai pemrograman Swift</li>
+                                        <li>Mysql, PostgreSQL</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dataScience-1" class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
+                                <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">PT. Serta Mejoyokarta</h5>
+                                    <p class="card-text">Dibutuhkan Programer IOS</p>
+                                    <p class="card-text">Kualifikasi : </p>
+                                    <ul class="card-text">
+                                        <li>S1 Teknik Informatika</li>
+                                        <li>Menguasai pemrograman Swift</li>
+                                        <li>Mysql, PostgreSQL</li>
+                                    </ul>
+                                    <a href="#" class="btn btn-primary">Lihat Detail</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="dataScience-2" class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="d-flex justify-content-center">
+                            <div class="card mt-4 mb-4 ms-4 me-4" style="width: 18rem;">
+                                <img class="card-img-top" src="img/jobs/mobile-3.jpg" alt="Card image cap">
+                                <div class="card-body">
+                                    <h5 class="card-title">PT. Serta Mejoyokarta</h5>
                                     <p class="card-text">Dibutuhkan Programer IOS</p>
                                     <p class="card-text">Kualifikasi : </p>
                                     <ul class="card-text">
@@ -251,10 +385,14 @@
         <div class="col-12 bg-dark mt-5 p-5">
             <p class="text-center text-muted"><strong>SILOKERNF</strong></p>
             <div class="d-flex justify-content-center fa-lg mt-3">
-                <a class="text-muted" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram me-4" aria-hidden="true"></i></a>
-                <a class="text-muted" href="https://facebook.com/" target="_blank"><i class="fa fa-facebook-square me-4" aria-hidden="true"></i></a>
-                <a class="text-muted" href="https://web.whatsapp.com" target="_blank"><i class="fa fa-whatsapp me-4"></i></a>
-                <a class="text-muted" href="https://elen.nurulfikri.ac.id" target="_blank"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a class="text-muted" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram me-4"
+                        aria-hidden="true"></i></a>
+                <a class="text-muted" href="https://facebook.com/" target="_blank"><i class="fa fa-facebook-square me-4"
+                        aria-hidden="true"></i></a>
+                <a class="text-muted" href="https://web.whatsapp.com" target="_blank"><i
+                        class="fa fa-whatsapp me-4"></i></a>
+                <a class="text-muted" href="https://elen.nurulfikri.ac.id" target="_blank"><i class="fa fa-globe"
+                        aria-hidden="true"></i></a>
             </div>
             <p class="text-center text-muted mt-3"> Copyright &copy; 2021 STT Nurul Fikri</p>
         </div>
