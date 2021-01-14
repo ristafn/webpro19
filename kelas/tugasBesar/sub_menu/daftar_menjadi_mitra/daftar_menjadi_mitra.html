@@ -62,7 +62,8 @@
                                         onclick="searchbar()">Search</button>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="masuk.html"><button class="btn btn-outline-primary active">Masuk</button></a>
+                                    <a href="masuk.html"><button
+                                            class="btn btn-outline-primary active">Masuk</button></a>
                                 </li>
                             </ul>
                         </div>
@@ -74,7 +75,7 @@
                 <div class="row">
                     <div class="col-12 col-lg-4 col-md-4">
                         <div class="m-5 mb-0 border-bottom border-primary border-2 well-lg">
-                            <h2>Isi Loker</h2>
+                            <h2>Form Menjadi Mitra</h2>
                         </div>
                     </div>
                     <div class="col-12 col-lg-8 col-md-8">
@@ -83,7 +84,10 @@
                                 <ol class="breadcrumb">
                                     <li class="breadcrumb-item" aria-current="page"><a class="text-dark"
                                             href="index.html">Home</a></li>
-                                    <li class="breadcrumb-item active"><a class="text-muted" href="#">Isi Loker</a></li>
+                                    <li class="breadcrumb-item" aria-current="page"><a class="text-dark"
+                                            href="../../daftar_mitra.html">Daftar Mitra</a></li>
+                                    <li class="breadcrumb-item active"><a class="text-muted" href="#">Form Menjadi
+                                            Mitra</a></li>
                                 </ol>
                             </nav>
                         </div>
@@ -91,9 +95,9 @@
                 </div>
             </section>
 
-            <!-- form penawaran lowongan kerja -->
+            <!-- form menjadi mitra -->
             <section>
-                <div class="m-5 mt-0">
+                <div class="m-5 mt-3">
                     <form>
                         <div class="form-group">
                             <div class="row mb-3">
@@ -124,53 +128,11 @@
                         <div class="form-group">
                             <div class="row mb-3">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <label for="deskripsiLowongan">Deskripsi Lowongan</label>
+                                    <label for="deskripsiLowongan">Alamat Kantor</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <textarea class="form-control" name="deskripsiLowongan" id="deskripsiLowongan" rows="2"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <label for="deskripsiLowongan">Deskripsi Kualifikasi Lowongan</label>
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <textarea class="form-control" name="deskripsiLowongan" id="deskripsiLowongan" rows="2"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <label for="kategoriLowongan">Kategori Lowongan</label>
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <div class="row">
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <label for="programmer"><input type="checkbox" name="programmer" id="programmer"> Programmer</label>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <label for="networkInfrastructure"><input type="checkbox" name="networkInfrastructure" id="networkInfrastructure"> Network & Infrastructure</label>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <label for="analyst"><input type="checkbox" name="analyst" id="analyst"> Analyst</label>
-                                        </div>
-                                        <div class="col-lg-3 col-md-6 col-sm-12">
-                                            <label for="dataScience"><input type="checkbox" name="dataScience" id="dataScience"> Data Science</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="row mb-3">
-                                <div class="col-lg-4 col-md-4 col-sm-12">
-                                    <label for="tglDateline">Tanggal Dateline</label>
-                                </div>
-                                <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <input class="form-control" type="date" name="tglDateline" id="tglDateline">
+                                    <textarea class="form-control" name="deskripsiLowongan" id="deskripsiLowongan"
+                                        rows="2"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -185,6 +147,16 @@
                             </div>
                         </div>
                         <div class="form-group">
+                            <div class="row mb-3">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="telepon">No HP/Telepon</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <input class="form-control" type="number" name="telepon" id="telepon">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
                             <div class="row mb-4">
                                 <div class="col-lg-4 col-md-4 col-sm-12">
                                     <label for="email">Email</label>
@@ -194,14 +166,24 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="form-group">
+                            <div class="row mb-4">
+                                <div class="col-lg-4 col-md-4 col-sm-12">
+                                    <label for="alamatweb">Alamat Web</label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-12">
+                                    <input class="form-control" type="text" name="alamatweb" id="alamatweb"
+                                        value="http://">
+                                </div>
+                            </div>
+                        </div>
                         <hr class="mb-4">
-                        <button type="submit" class="btn btn-primary">Submit</button>
-                        <button type="reset" class="btn btn-primary">Reset</button>
+                        <button type="submit" class="btn btn-primary">Daftar</button>
+                        <a type="reset" class="btn btn-danger" href="../../daftar_mitra.html">batal</a>
                     </form>
                 </div>
             </section>
-            <!-- end form penawaran lowongan kerja -->
-
+            <!-- end form menjadi mitra -->
         </div>
         <div class="col-lg-1 col-md-1 col-sm-12"></div>
     </div>
@@ -212,7 +194,7 @@
             <p class="text-center text-muted"><strong>SILOKERNF</strong></p>
             <div class="d-flex justify-content-center fa-lg mt-3">
                 <a class="text-muted" href="https://www.instagram.com/sttterpadunf/?hl=id" target="_blank"><i
-                    class="fa fa-instagram me-4" aria-hidden="true"></i></a>
+                        class="fa fa-instagram me-4" aria-hidden="true"></i></a>
                 <a class="text-muted" href="https://web.facebook.com/STTTerpaduNF/?_rdc=1&_rdr" target="_blank"><i
                         class="fa fa-facebook-square me-4" aria-hidden="true"></i></a>
                 <a class="text-muted"
@@ -221,9 +203,11 @@
                 <a class="text-muted" href="https://nurulfikri.ac.id" target="_blank"><i class="fa fa-globe"
                         aria-hidden="true"></i></a>
             </div>
-            <p class="text-center text-muted mt-3"> Copyright &copy; 2021 STT Nurul Fikri</p>
+            <p class="text-center text-muted mt-3">Develop By Mahasiswa STT_NF &copy; 2021</p>
         </div>
     </footer>
+    <!-- end footer -->
+    
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
