@@ -99,7 +99,7 @@
                             <form action="_POST">
                                 <div class="form-group d-flex justify-content-start m-5 mt-0 mb-4">
                                     <label class="me-3 pt-1" for="kategori">Kategori</label>
-                                    <select class="form-control w-50" id="kategori" onchange="main()">
+                                    <select class="form-control w-50" id="kategori" onchange="joblist()">
                                         <option value="all">All</option>
                                         <option value="programmer">Programer</option>
                                         <option value="network">Network & Infrastructure</option>
@@ -115,9 +115,10 @@
 
                 <!-- card job list -->
                 <section>
-                    <div class="container">
+                    <!-- page 1 -->
+                    <div id="page1" class="container">
                         <div class="row">
-                            <div id="programmer-1" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <div id="programmer1" class="col-lg-4 col-md-6 col-sm-12 py-4">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="img/jobs/mobile-1.png" alt="Card image cap">
                                     <div class="card-body">
@@ -135,7 +136,7 @@
                                     <div class="card-footer card-footer text-center text-muted small">5 Januari 2021</div>
                                 </div>
                             </div>
-                            <div id="programmer-2" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <div id="programmer2" class="col-lg-4 col-md-6 col-sm-12 py-4">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="img/jobs/mobile-2.png" alt="Card image cap">
                                     <div class="card-body">
@@ -152,7 +153,7 @@
                                     <div class="card-footer text-center text-muted small">3 Januari 2021</div>
                                 </div>
                             </div>
-                            <div id="analyst-1" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <div id="analyst1" class="col-lg-4 col-md-6 col-sm-12 py-4">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="img/jobs/analyst1.png" alt="Card image cap">
                                     <div class="card-body">
@@ -169,7 +170,7 @@
                                     <div class="card-footer text-center text-muted small">29 Desember 2020</div>
                                 </div>
                             </div>
-                            <div id="network-1" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <div id="network1" class="col-lg-4 col-md-6 col-sm-12 py-4">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="img/jobs/netrowk1.png" alt="Card image cap">
                                     <div class="card-body">
@@ -186,7 +187,7 @@
                                     <div class="card-footer text-center text-muted small">29 Desember 2020</div>
                                 </div>
                             </div>
-                            <div id="programmer-3" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <div id="programmer3" class="col-lg-4 col-md-6 col-sm-12 py-4">
                                 <div class="card h-100">
                                     <img class="card-img-top" src="img/jobs/backend-1.png" alt="Card image cap">
                                     <div class="card-body">
@@ -203,18 +204,58 @@
                                     <div class="card-footer text-center text-muted small">1 Januari 2021</div>
                                 </div>
                             </div>
+                            <div id="programmer4" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/jobs/mobile-4.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PT. DES Teknologi Informasi</h5>
+                                        <p class="card-text">Dibutuhkan Support Aplikasi(SA)</p>
+                                        <p class="card-text">Kualifikasi : </p>
+                                        <ul class="card-text">
+                                            <li>Pria / Wanita</li>
+                                            <li>Usia maks. 27 tahun</li>
+                                            <li>Pendidikan min. D3</li>
+                                        </ul>
+                                        <a href="sub_menu/detail_lowongan_baru/programmer4.html" class="btn btn-primary">Lihat Detail</a>
+                                    </div>
+                                    <div class="card-footer text-center text-muted small">2 Januari 2021</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- page 2 -->
+                    <!-- <div id="page2" class="container">
+                        <div class="row">
+                            <div id="programmer5" class="col-lg-4 col-md-6 col-sm-12 py-4">
+                                <div class="card h-100">
+                                    <img class="card-img-top" src="img/jobs/ux-1.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">PT. DES Teknologi Informasi</h5>
+                                        <p class="card-text">Dibutuhkan Support Aplikasi(SA)</p>
+                                        <p class="card-text">Kualifikasi : </p>
+                                        <ul class="card-text">
+                                            <li>Pria / Wanita</li>
+                                            <li>Usia maks. 27 tahun</li>
+                                            <li>Pendidikan min. D3</li>
+                                        </ul>
+                                        <a href="sub_menu/detail_lowongan_baru/programmer4.html" class="btn btn-primary">Lihat Detail</a>
+                                    </div>
+                                    <div class="card-footer text-center text-muted small">2 Januari 2021</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
                 </section>
                 <!-- end card job list -->
                     
                 <!-- pagination -->
-                <div class="d-flex justify-content-center col-12 mt-5">
+                <div class="d-flex justify-content-center col-12 mt-2 mb-2">
                     <nav aria-label="Page navigation example">
                         <ul class="pagination">
-                            <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
-                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link text-muted" href="#">2</a></li>
+                            <li id="page1-button" class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+                            <li id="page2-button" class="page-item"><button class="page-link active" href="#" onclick="mainPage1()">1</button></li>
+                            <li class="page-item"><button class="page-link text-muted" href="" onclick="mainPage2()">2</button></li>
                             <li class="page-item"><a class="page-link text-muted" href="#">3</a></li>
                             <li class="page-item"><a class="page-link text-muted" href="#">4</a></li>
                             <li class="page-item"><a class="page-link text-muted" href="#">Next</a></li>
@@ -228,7 +269,7 @@
 
         <!-- footer -->
         <footer>
-            <div class="col-12 bg-dark mt-5 p-5">
+            <div class="col-12 bg-dark p-5">
                 <p class="text-center text-muted"><strong>SILOKERNF</strong></p>
                 <div class="d-flex justify-content-center fa-lg mt-3">
                     <a class="text-muted" href="https://www.instagram.com/sttterpadunf/?hl=id" target="_blank"><i
