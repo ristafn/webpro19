@@ -1,4 +1,3 @@
-
 // joblist
 function joblist(){
     programmer1.style.display = 'none'
