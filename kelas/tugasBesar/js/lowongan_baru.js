@@ -46,9 +46,9 @@ page1button.onclick = function() {
     page2button.classList.add('text-muted')
     page1button.classList.remove('text-muted')
     page1button.classList.add('active')
-    prev.classList.add('text-dark')
+    prev.classList.add('text-primary')
     prev.classList.remove('text-muted')
-    next.classList.remove('text-dark')
+    next.classList.remove('text-primary')
     next.classList.add('text-muted')
 }
 
@@ -59,9 +59,9 @@ page2button.onclick = function() {
     page1button.classList.add('text-muted')
     page2button.classList.add('active')
     page2button.classList.remove('text-muted')
-    prev.classList.remove('text-dark')
+    prev.classList.remove('text-primary')
     prev.classList.add('text-muted')
-    next.classList.add('text-dark')
+    next.classList.add('text-primary')
     next.classList.remove('text-muted')
 }
 
@@ -72,9 +72,9 @@ prev.onclick = function() {
     page2button.classList.add('text-muted')
     page1button.classList.remove('text-muted')
     page1button.classList.add('active')
-    prev.classList.add('text-dark')
+    prev.classList.add('text-primary')
     prev.classList.remove('text-muted')
-    next.classList.remove('text-dark')
+    next.classList.remove('text-primary')
     next.classList.add('text-muted')
 }
 
@@ -85,8 +85,8 @@ next.onclick = function() {
     page1button.classList.add('text-muted')
     page2button.classList.add('active')
     page2button.classList.remove('text-muted')
-    prev.classList.remove('text-dark')
+    prev.classList.remove('text-primary')
     prev.classList.add('text-muted')
-    next.classList.add('text-dark')
+    next.classList.add('text-primary')
     next.classList.remove('text-muted')
 }
