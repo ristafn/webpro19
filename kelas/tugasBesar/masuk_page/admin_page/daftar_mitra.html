@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Mitra</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- searchbar -->
+    <link rel="stylesheet" type="text/css" href="../../css/searchbar.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-12"></div>
+        <div class="col-lg-10 col-md-10 col-sm-12">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><strong>SILOKERNF</strong></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="lowongan_baru.html">Lowongan Baru</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="isi_loker.html" tabindex="-1" aria-disabled="true">Isi
+                                        Loker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link border-bottom border-primary border-2 active"
+                                        href="daftar_mitra.html" tabindex="-1" aria-disabled="true">Daftar Mitra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="berita.html" tabindex="-1" aria-disabled="true">Berita</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tentang.html" tabindex="-1" aria-disabled="true">Tentang</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <button id="buttonSearchFafa" class="btn btn-outline-primary me-2" type="submit"><i
+                                        class="fa fa-search" aria-hidden="true"></i></button>
+                                <input id="search" class="form-control me-4" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </form>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <button id="buttonSearch" class="btn btn-outline-primary me-2"
+                                        onclick="searchbar()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="btn btn-primary" href="admin.html" tabindex="-1" aria-disabled="true">
+                                        Admin&nbsp;
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- title -->
+            <section>
+                <div class="row">
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="m-5 mb-0 border-bottom border-primary border-2 well-lg">
+                            <h2>Mitra Perusahaan Kami</h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 col-md-6">
+                        <div class="d-flex justify-content-end m-5">
+                            <nav aria-label="Page breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page"><a class="text-dark"
+                                            href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item active"><a class="text-muted" href="#">Daftar Mitra</a>
+                                    </li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="col-lg-12 ol-md-12 col-sm-12 m-5 mt-2 mb-1">
+                        <p>Belum Menjadi Mitra? <a href="sub_menu/daftar_menjadi_mitra/daftar_menjadi_mitra.html">Daftar.</a></p>
+                    </div>
+                    <div class="col-lg-12 ol-md-12 col-sm-12 m-5 mt-0 mb-4">
+                        <small class="form-text">*Klik Daftar dan isi formulirnya untuk menjadi mitra</small>
+                    </div>
+                </div>
+            </section>
+            <!-- end title -->
+
+            <!-- daftar mitra -->
+            <section>
+                <div class="container">
+                    <div class="row mt-3">
+                        <div class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <a class="text-decoration-none text-dark" href="https://telkom.co.id/sites" target="_blank">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../img/mitra/mitra1.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Telkom Indonesia</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <a class="text-dark" href="https://about.google" target="_blank">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../img/mitra/mitra2.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Google</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 py-4">
+                            <a class="text-dark" href="https://www.tokopedia.com/about/?lang=en" target="_blank">
+                                <div class="card">
+                                    <img class="card-img-top" src="../../img/mitra/mitra3.png" alt="Card image cap">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Tokopedia</h5>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end daftar mitra-->
+
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-12"></div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="col-12 bg-dark mt-5 p-5">
+            <p class="text-center text-muted"><strong>SILOKERNF</strong></p>
+            <div class="d-flex justify-content-center fa-lg mt-3">
+                <a class="text-muted" href="https://www.instagram.com/sttterpadunf/?hl=id" target="_blank"><i
+                        class="fa fa-instagram me-4" aria-hidden="true"></i></a>
+                <a class="text-muted" href="https://web.facebook.com/STTTerpaduNF/?_rdc=1&_rdr" target="_blank"><i
+                        class="fa fa-facebook-square me-4" aria-hidden="true"></i></a>
+                <a class="text-muted"
+                    href="https://api.whatsapp.com/send?phone=6285716243174&fbclid=IwAR0iD2bRroQgPqAh6aOXJZpCZYRZG_YUNlJfZnQsVL-YWKefcn92hvoG1ns"
+                    target="_blank"><i class="fa fa-whatsapp me-4"></i></a>
+                <a class="text-muted" href="https://nurulfikri.ac.id" target="_blank"><i class="fa fa-globe"
+                        aria-hidden="true"></i></a>
+            </div>
+            <p class="text-center text-muted mt-3">Develop By Mahasiswa STT_NF &copy; 2021</p>
+        </div>
+    </footer>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+    <!-- searchbar -->
+    <script src="../../js/searchbar.js"></script>
+</body>
+
+</html>
