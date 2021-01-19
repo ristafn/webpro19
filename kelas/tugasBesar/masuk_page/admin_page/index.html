@@ -14,9 +14,6 @@
 
     <!-- searchbar -->
     <link rel="stylesheet" type="text/css" href="../../css/searchbar.css">
-    
-    <!-- dropdown_nav -->
-    <link rel="stylesheet" type="text/css" href="../../css/dropdown_nav.css">
 </head>
 
 <body>
@@ -53,7 +50,8 @@
                                     <a class="nav-link" href="berita.html" tabindex="-1" aria-disabled="true">Berita</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="tentang.html" tabindex="-1" aria-disabled="true">Tentang</a>
+                                    <a class="nav-link" href="tentang.html" tabindex="-1"
+                                        aria-disabled="true">Tentang</a>
                                 </li>
                             </ul>
                             <form class="d-flex">
@@ -67,18 +65,18 @@
                                     <button id="buttonSearch" class="btn btn-outline-primary me-2"
                                         onclick="searchbar()"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </li>
-                                <li class="nav-item">
-                                    <div class="dropdown">
-                                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            Admin&nbsp;
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                            <a class="dropdown-item" href="kelola_lowongan_kerja.html">Kelola Lowongan Kerja</a>
-                                            <a class="dropdown-item" href="kelola_mitra.html">Kelola Mitra</a>
-                                            <a class="dropdown-item text-danger" href="../../index.html">Keluar</a>
-                                        </div>
-                                    </div>
+                                <li class="nav-item dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin&nbsp;
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="kelola_lowongan_kerja.html">Kelola Lowongan
+                                            Kerja</a></li>
+                                        <li><a class="dropdown-item" href="kelola_mitra.html">Kelola Mitra</a></li>
+                                        <li><a class="dropdown-item text-danger" href="../../index.html">Keluar</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
