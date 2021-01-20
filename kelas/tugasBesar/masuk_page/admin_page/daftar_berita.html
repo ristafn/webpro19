@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berita Terbaru</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- searchbar -->
+    <link rel="stylesheet" type="text/css" href="../../css/searchbar.css">
+</head>
+
+<body>
+    <div class="row">
+        <div class="col-lg-1 col-md-1 col-sm-12"></div>
+        <div class="col-lg-10 col-md-10 col-sm-12">
+            <header>
+                <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="index.html"><strong>SILOKERNF</strong></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="lowongan_baru.html">Lowongan Baru</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="isi_loker.html" tabindex="-1" aria-disabled="true">Isi
+                                        Loker</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="daftar_mitra.html" tabindex="-1"
+                                        aria-disabled="true">Daftar Mitra</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="berita.html" tabindex="-1" aria-disabled="true">Berita</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tentang.html" tabindex="-1"
+                                        aria-disabled="true">Tentang</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <button id="buttonSearchFafa" class="btn btn-outline-primary me-2" type="submit"><i
+                                        class="fa fa-search" aria-hidden="true"></i></button>
+                                <input id="search" class="form-control me-4" type="search" placeholder="Search"
+                                    aria-label="Search">
+                            </form>
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <button id="buttonSearch" class="btn btn-outline-primary me-2"
+                                        onclick="searchbar()"><i class="fa fa-search" aria-hidden="true"></i></button>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin&nbsp;
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="kelola_lowongan_kerja.html">Kelola Lowongan Kerja</a></li>
+                                        <li><a class="dropdown-item" href="kelola_mitra.html">Kelola Mitra</a></li>
+                                        <li><a class="dropdown-item" href="isi_berita.html">Isi Berita</a></li>
+                                        <li><a class="dropdown-item border-bottom border-primary border-2 active" href="daftar_berita.html">Daftar Berita</a></li>
+                                        <li><a class="dropdown-item text-danger" href="../../index.html">Keluar</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <!-- title -->
+            <section>
+                <div class="row">
+                    <div class="col-12 col-lg-4 col-md-4">
+                        <div class="m-5 mb-0 border-bottom border-primary border-2 well-lg">
+                            <h2>Isi Berita</h2>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8 col-md-8">
+                        <div class="d-flex justify-content-end m-5 mb-3">
+                            <nav aria-label="Page breadcrumb">
+                                <ol class="breadcrumb">
+                                    <li class="breadcrumb-item" aria-current="page"><a class="text-dark"
+                                            href="index.html">Home</a></li>
+                                    <li class="breadcrumb-item" aria-current="page"><a class="text-dark"
+                                            href="#">Admin</a></li>
+                                    <li class="breadcrumb-item active"><a class="text-muted" href="#">Isi Berita</a></li>
+                                </ol>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- end title -->
+
+        </div>
+        <div class="col-lg-1 col-md-1 col-sm-12"></div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="col-12 bg-dark mt-5 p-5">
+            <p class="text-center text-muted"><strong>SILOKERNF</strong></p>
+            <div class="d-flex justify-content-center fa-lg mt-3">
+                <a class="text-muted" href="https://www.instagram.com/sttterpadunf/?hl=id" target="_blank"><i
+                        class="fa fa-instagram me-4" aria-hidden="true"></i></a>
+                <a class="text-muted" href="https://web.facebook.com/STTTerpaduNF/?_rdc=1&_rdr" target="_blank"><i
+                        class="fa fa-facebook-square me-4" aria-hidden="true"></i></a>
+                <a class="text-muted"
+                    href="https://api.whatsapp.com/send?phone=6285716243174&fbclid=IwAR0iD2bRroQgPqAh6aOXJZpCZYRZG_YUNlJfZnQsVL-YWKefcn92hvoG1ns"
+                    target="_blank"><i class="fa fa-whatsapp me-4"></i></a>
+                <a class="text-muted" href="https://nurulfikri.ac.id" target="_blank"><i class="fa fa-globe"
+                        aria-hidden="true"></i></a>
+            </div>
+            <p class="text-center text-muted mt-3">Develop By Mahasiswa STT_NF &copy; 2021</p>
+        </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+    <!-- searchbar -->
+    <script src="../../js/searchbar.js"></script>
+</body>
+
+</html>
