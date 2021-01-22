@@ -53,7 +53,29 @@
                                     <a class="nav-link" href="berita.html" tabindex="-1" aria-disabled="true">Berita</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="tentang.html" tabindex="-1" aria-disabled="true">Tentang</a>
+                                    <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#tentang"
+                                        tabindex="-1" aria-disabled="true">Tentang</a>
+                                    <div class="modal fade" id="tentang" tabindex="-1" aria-labelledby="tentangLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="tentangLabel">Tentang</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Website ini dibuat oleh,
+                                                    <ul>
+                                                        <li>Angga Kusuma Putra</li>
+                                                        <li>Daffa Dzuhair</li>
+                                                        <li>Ilham Pratama</li>
+                                                        <li>Rista Fauji Nafsir</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                             <form class="d-flex">
@@ -82,7 +104,8 @@
                     <div class="col-lg-10 col-md-10 col-sm-12">
                         <div class="jumbotron text-white p-1 m-5">
                             <h1 class="display-3">Sistem Informasi Lowongan Kerja STT-NF</h1>
-                            <p class="lead">SILOKERNF merupakan penyedia informasi tentang dunia kerja, seperti lowongan pekerjaan,
+                            <p class="lead">SILOKERNF merupakan penyedia informasi tentang dunia kerja, seperti lowongan
+                                pekerjaan,
                                 berita seputar IT, dan lain-lain</p>
                             <p class="lead">
                                 <a class="btn btn-primary btn-lg my-4" href="masuk.html" role="button">Masuk</a>
@@ -90,7 +113,7 @@
                         </div>
                     </div>
                     <div class="d-none d-lg-block d-md-block col-lg-2 col-md-2 col-sm-12">
-                        
+
                     </div>
                 </div>
             </section>
@@ -260,6 +283,9 @@
 
     <!-- searchbar -->
     <script src="js/searchbar.js"></script>
+
+    <!-- tentang -->
+    <script src="js/tentang.js"></script>
 </body>
 
 </html>
