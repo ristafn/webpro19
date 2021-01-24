@@ -13,7 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- searchbar -->
-    <link rel="stylesheet" type="text/css" href="../../css/searchbar.css">
+    <link rel="stylesheet" type="text/css" href="../../../../css/searchbar.css">
+
+    <!-- validasi -->
+    <link rel="stylesheet" type="text/css" href="../../../../css/validasi.css">
 </head>
 
 <body>
@@ -21,7 +24,7 @@
         <div class="col-lg-1 col-md-1 col-sm-12"></div>
         <div class="col-lg-10 col-md-10 col-sm-12">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                <nav class="navbar navbar-expand-lg navbar-light pt-3">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html"><strong>SILOKERNF</strong></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -59,10 +62,22 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <button id="buttonSearch" class="btn btn-outline-primary me-2"
-                                        onclick="searchbar()">Search</button>
+                                        onclick="searchbar()"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </li>
-                                <li class="nav-item">
-                                    <a class="btn btn-outline-primary active" href="../../masuk.html">Masuk</a>
+                                <li class="nav-item dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin&nbsp;
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../../kelola_lowongan_kerja.html">Kelola Lowongan
+                                            Kerja</a></li>
+                                        <li><a class="dropdown-item" href="../../kelola_mitra.html">Kelola Mitra</a></li>
+                                        <li><a class="dropdown-item" href="../../isi_berita.html">Isi Berita</a></li>
+                                        <li><a class="dropdown-item" href="../../daftar_berita.html">Daftar Berita</a></li>
+                                        <li><a class="dropdown-item text-danger" href="../../../../index.html">Keluar</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -73,12 +88,12 @@
             <!-- title -->
             <section>
                 <div class="row">
-                    <div class="col-12 col-lg-4 col-md-4">
+                    <div class="col-12 col-lg-6 col-md-6">
                         <div class="m-5 mb-0 border-bottom border-primary border-2 well-lg">
                             <h2>Form Menjadi Mitra</h2>
                         </div>
                     </div>
-                    <div class="col-12 col-lg-8 col-md-8">
+                    <div class="col-12 col-lg-6 col-md-6">
                         <div class="d-flex justify-content-end m-5">
                             <nav aria-label="Page breadcrumb">
                                 <ol class="breadcrumb">
@@ -106,7 +121,8 @@
                                     <label for="namaPerusahaan">Nama Perusahaan/Organisasi</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <input type="text" class="form-control" name="namaPerusahaan" id="namaPerusahaan">
+                                    <input type="text" class="form-control" name="namaPerusahaan" id="namaPerusahaan" pattern=".{,20}" title="Max 20 character dan harus di isi" onkeyup="errorNamaPerusahaanFun()" placeholder="Masukkan nama perusahaan" required>
+                                    <span id="errorNamaPerusahaan" class="text-danger small">*Maksimal 20 huruf</span>
                                 </div>
                             </div>
                         </div>
@@ -116,12 +132,12 @@
                                     <label for="bidangUsaha">Bidang Usaha</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <select class="form-control" id="bidangUsaha">
+                                    <select class="form-control" id="bidangUsaha" required>
                                         <option>Pilih Bidang Usaha...</option>
                                         <option>Perbankan</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                        <option>Rumah Sakit</option>
+                                        <option>Perkantoran</option>
+                                        <option>Pabrik</option>
                                     </select>
                                 </div>
                             </div>
@@ -133,7 +149,7 @@
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
                                     <textarea class="form-control" name="deskripsiLowongan" id="deskripsiLowongan"
-                                        rows="2"></textarea>
+                                        rows="2" placeholder="contoh : Jl. Budi no.2 ...." required></textarea>
                                 </div>
                             </div>
                         </div>
@@ -143,7 +159,8 @@
                                     <label for="kontakPerson">Kontak Person</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <input class="form-control" type="number" name="kontakPerson" id="kontakPerson">
+                                    <input class="form-control" type="number" name="kontakPerson" id="kontakPerson" placeholder="contoh : 080008080807" onkeyup="errorKontakFun()" required>
+                                    <span id="errorKontak" class="text-danger small">*Masukkan kontak min 10 dan maks 12 digit</span>
                                 </div>
                             </div>
                         </div>
@@ -153,7 +170,8 @@
                                     <label for="telepon">No HP/Telepon</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <input class="form-control" type="number" name="telepon" id="telepon">
+                                    <input class="form-control" type="number" name="telepon" id="telepon"  placeholder="contoh : 080008080807" onkeyup="errorTeleponFun()" required>
+                                    <span id="errorTelepon" class="text-danger small">*Masukkan kontak min 10 dan maks 12 digit</span>
                                 </div>
                             </div>
                         </div>
@@ -163,7 +181,8 @@
                                     <label for="email">Email</label>
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
-                                    <input class="form-control" type="email" name="email" id="email">
+                                    <input class="form-control" type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="contoh : jhomn12@gmail.com" placeholder="contoh : jhomn12@gmail.com" onkeyup="errorEmailFun()">
+                                    <span id="errorEmail" class="text-danger small">*Sesuaikan dengan format email!</span>
                                 </div>
                             </div>
                         </div>
@@ -174,13 +193,16 @@
                                 </div>
                                 <div class="col-lg-8 col-md-8 col-sm-12">
                                     <input class="form-control" type="text" name="alamatweb" id="alamatweb"
-                                        value="http://">
+                                        value="https://">
+                                    <span class="text-muted small">*contoh : http://www.google.com atau https://www.googe.com</span>
                                 </div>
                             </div>
                         </div>
                         <hr class="mb-4">
-                        <button type="submit" class="btn btn-primary">Daftar</button>
-                        <a type="reset" class="btn btn-danger" href="../../daftar_mitra.html">batal</a>
+                        <div class="d-flex justify-content-end">
+                            <a type="reset" class="btn btn-danger me-1" href="../../daftar_mitra.html">batal</a>
+                            <button type="submit" class="btn btn-primary">Daftar</button>
+                        </div>
                     </form>
                 </div>
             </section>
@@ -221,7 +243,10 @@
     -->
 
     <!-- searchbar -->
-    <script src="../../js/searchbar.js"></script>
+    <script src="../../../../js/searchbar.js"></script>
+
+    <!-- validasi -->
+    <script src="../../../../js/validasi/val_daftar_mitra.js"></script>
 </body>
 
 </html>
