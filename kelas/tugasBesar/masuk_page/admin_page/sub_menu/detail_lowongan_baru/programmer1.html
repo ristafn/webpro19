@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lowongan Baru</title>
+    <title>Lowongan Baru - Detail Lowongan</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -13,9 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- searchbar -->
-    <link rel="stylesheet" type="text/css" href="../../css/searchbar.css">
-
-    <link rel="stylesheet" type="text/css" href="../../css/lowongan_baru.css">
+    <link rel="stylesheet" type="text/css" href="../../../../css/searchbar.css">
 </head>
 
 <body>
@@ -23,7 +21,7 @@
         <div class="col-lg-1 col-md-1 col-sm-12"></div>
         <div class="col-lg-10 col-md-10 col-sm-12">
             <header>
-                <nav class="navbar navbar-expand-lg navbar-light pt-4">
+                <nav class="navbar navbar-expand-lg navbar-light pt-3">
                     <div class="container-fluid">
                         <a class="navbar-brand" href="index.html"><strong>SILOKERNF</strong></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -45,11 +43,36 @@
                                         Loker</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="daftar_mitra.html" tabindex="-1"
+                                    <a class="nav-link" href="../../daftar_mitra.html" tabindex="-1"
                                         aria-disabled="true">Daftar Mitra</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" href="../../berita.html" tabindex="-1" aria-disabled="true">Berita</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" type="button" data-bs-toggle="modal" data-bs-target="#tentang"
+                                        tabindex="-1" aria-disabled="true">Tentang</a>
+                                    <div class="modal fade" id="tentang" tabindex="-1" aria-labelledby="tentangLabel"
+                                        aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="tentangLabel">Tentang</h5>
+                                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                        aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    Website ini dibuat oleh,
+                                                    <ul>
+                                                        <li>Angga Kusuma Putra</li>
+                                                        <li>Daffa Dzuhair</li>
+                                                        <li>Ilham Pratama</li>
+                                                        <li>Rista Fauji Nafsir</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                             <form class="d-flex">
@@ -61,10 +84,22 @@
                             <ul class="navbar-nav">
                                 <li class="nav-item">
                                     <button id="buttonSearch" class="btn btn-outline-primary me-2"
-                                        onclick="searchbar()">Search</button>
+                                        onclick="searchbar()"><i class="fa fa-search" aria-hidden="true"></i></button>
                                 </li>
-                                <li class="nav-item">
-                                    <a href="../../masuk.html"><button class="btn btn-outline-primary active">Masuk</button></a>
+                                <li class="nav-item dropdown">
+                                    <a class="btn btn-primary dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Admin&nbsp;
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </a>
+                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="../../kelola_lowongan_kerja.html">Kelola Lowongan
+                                            Kerja</a></li>
+                                        <li><a class="dropdown-item" href="../../kelola_mitra.html">Kelola Mitra</a></li>
+                                        <li><a class="dropdown-item" href="../../isi_berita.html">Isi Berita</a></li>
+                                        <li><a class="dropdown-item" href="../../daftar_berita.html">Daftar Berita</a></li>
+                                        <li><a class="dropdown-item text-danger" href="../../../../index.html">Keluar</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -98,27 +133,32 @@
             <!-- job title -->
 
             <section>
-                <div class="row m-5 mt-2">
-                    <div class="col-lg-6">
-                        <div class="d-flex justify-content-center">
-                            <div class="card" style="width: 18rem;">
-                                <img class="card-img-top" src="../../img/jobs/mobile-1.png" alt="Card image cap">
+                <fieldset class="border border-muted border-3 m-3 mb-5 mt-3 rounded bg-light">
+                    <div class="row m-3">
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <div class="d-flex justify-content-center">
+                                <div class="card" style="width: 18rem;">
+                                    <img class="card-img-top" src="../../../../img/jobs/detail/mobile-1.png" alt="Card image cap">
+                                </div>
                             </div>
                         </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                            <p>Perusahaan ini membutuhkan programmer IOS dengan ketentuan : </p>
+                            <ul>
+                                <li>Lulusan S1 teknik informatika</li>
+                                <li>Menguasai pemrograman swift</li>
+                                <li>Mampu bekerja dalam tim</li>
+                                <li>Tidak merokok</li>
+                                <li>Rajin beribadah</li>
+                            </ul>
+                            <p>Hubungi kami di isodev19@gmail.com</p>
+                            <hr>
+                            <p class="text-muted small">5 Januari 2021</p>
+                        </div>
                     </div>
-                    <div class="col-lg-6">
-                        <p>Perusahaan ini membutuhkan programmer IOS dengan ketentuan : </p>
-                        <ul>
-                            <li>Lulusan s1 teknik informatika</li>
-                            <li>menguasai pemrograman swift</li>
-                            <li>tidak merokok</li>
-                            <li>rajin beribadah</li>
-                        </ul>
-                        <p>Hubungi kami di isodev19@gmail.com</p>
-                        <hr>
-                        <p class="text-muted small">5 Januari 2021</p>
-                    </div>
-                </div>
+                </fieldset>
+                
+                <a class="btn btn-primary text-decoration-none m-5 mt-0" href="../../lowongan_baru.html"><i class="fa fa-arrow-left" aria-hidden="true"></i></i>&nbsp;Kembali</a>
             </section>
             
         </div>
@@ -127,11 +167,11 @@
 
     <!-- footer -->
     <footer>
-        <div class="col-12 bg-dark mt-5 p-5">
+        <div class="col-12 bg-dark p-5">
             <p class="text-center text-muted"><strong>SILOKERNF</strong></p>
             <div class="d-flex justify-content-center fa-lg mt-3">
                 <a class="text-muted" href="https://www.instagram.com/sttterpadunf/?hl=id" target="_blank"><i
-                    class="fa fa-instagram me-4" aria-hidden="true"></i></a>
+                        class="fa fa-instagram me-4" aria-hidden="true"></i></a>
                 <a class="text-muted" href="https://web.facebook.com/STTTerpaduNF/?_rdc=1&_rdr" target="_blank"><i
                         class="fa fa-facebook-square me-4" aria-hidden="true"></i></a>
                 <a class="text-muted"
@@ -140,7 +180,7 @@
                 <a class="text-muted" href="https://nurulfikri.ac.id" target="_blank"><i class="fa fa-globe"
                         aria-hidden="true"></i></a>
             </div>
-            <p class="text-center text-muted mt-3"> Copyright &copy; 2021 STT Nurul Fikri</p>
+            <p class="text-center text-muted mt-3">Develop By Mahasiswa STT_NF &copy; 2021</p>
         </div>
     </footer>
     <!-- end footer -->
@@ -157,10 +197,7 @@
     -->
 
     <!-- searchbar -->
-    <script src="../../js/searchbar.js"></script>
-
-    <!-- kategori -->
-    <script src="../../js/joblist.js"></script>
+    <script src="../../../../js/searchbar.js"></script>
 </body>
 
 </html>
