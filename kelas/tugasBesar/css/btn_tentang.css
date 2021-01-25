@@ -1,8 +1,8 @@
-#btnTentang{
+.btn-tentang{
     border: none;
     cursor: pointer;
 }
 
-#btnTentang:focus{
+.btn-tentang:focus{
     outline: none !important;
 }
